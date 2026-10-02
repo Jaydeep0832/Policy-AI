@@ -1,0 +1,111 @@
+[
+  {
+    "file_name": "HR Policy Manual 2026_20.03.26.pdf",
+    "policy_id": "IIMA-HR-STAFF",
+    "title": "IIMA HR Policy Manual (Staff)",
+    "version": "2026.1",
+    "status": "approved",
+    "effective_date": "2026-03-20",
+    "is_latest": true,
+    "precedence_rank": 2,
+    "department": "Human Resources",
+    "description": "Comprehensive operational policy for administrative staff covering recruitment, probation, leave entitlements (300-day EL ceiling, 8-day CL), LTC encashment, and discipline."
+  },
+  {
+    "file_name": "HR_Policy_Manual_2024.pdf",
+    "policy_id": "IIMA-HR-STAFF",
+    "title": "IIMA HR Policy Manual (Staff)",
+    "version": "2024.1",
+    "status": "superseded",
+    "effective_date": "2024-01-01",
+    "is_latest": false,
+    "superseded_by": "HR Policy Manual 2026_20.03.26.pdf",
+    "precedence_rank": 2,
+    "department": "Human Resources",
+    "description": "Historical 2024 staff HR policy superseded by the 2026 Manual. Must be excluded from active search."
+  },
+  {
+    "file_name": "IIMA Regulation Gazetted.pdf",
+    "policy_id": "IIMA-STATUTORY-REG",
+    "title": "IIMA Gazetted Regulations (IIM Act 2017)",
+    "version": "2024.1",
+    "status": "approved",
+    "effective_date": "2024-06-01",
+    "is_latest": true,
+    "precedence_rank": 1,
+    "department": "Board of Governors / Ministry of Education",
+    "description": "Statutory institutional regulations defining powers of Director, BoG, Academic Council, and statutory appointment rules."
+  },
+  {
+    "file_name": "IIMA_Whistleblower_Policy.md",
+    "policy_id": "IIMA-GOV-WHISTLEBLOWER",
+    "title": "IIMA Whistleblower Policy",
+    "version": "1.0",
+    "status": "approved",
+    "effective_date": "2022-01-27",
+    "is_latest": true,
+    "precedence_rank": 2,
+    "department": "Audit Committee / Board of Governors",
+    "description": "Governance framework for reporting corruption, fraud, or unethical behavior with strict identity confidentiality, non-retaliation, and 45-day investigation timeline."
+  },
+  {
+    "file_name": "Employee_Workplace_Policy_2026.pdf",
+    "policy_id": "IIMA-WORKPLACE-2026",
+    "title": "Employee Workplace Policy Manual",
+    "version": "2.0",
+    "status": "approved",
+    "effective_date": "2026-04-01",
+    "is_latest": true,
+    "precedence_rank": 3,
+    "department": "Human Resources",
+    "description": "Operational guidelines covering working hours (9:30 AM - 6:00 PM), remote work limits (up to 8 days/month), and travel reimbursement limits."
+  },
+  {
+    "file_name": "IIMA_Privacy_Policy_TandC.md",
+    "policy_id": "IIMA-LEGAL-PRIVACY",
+    "title": "IIMA Website Privacy Policy & Terms of Use",
+    "version": "1.0",
+    "status": "approved",
+    "effective_date": "2024-01-01",
+    "is_latest": true,
+    "precedence_rank": 4,
+    "department": "IT & Legal",
+    "description": "Public website data collection, cookie usage, non-disclosure, copyright, and limitation of liability rules."
+  },
+  {
+    "file_name": "Leave_Policy_2021_OUTDATED_TEST.pdf",
+    "policy_id": "TEST-LEAVE-2021",
+    "title": "Leave Policy 2021 [OUTDATED TEST FIXTURE]",
+    "version": "2021.1",
+    "status": "expired",
+    "effective_date": "2021-01-01",
+    "is_latest": false,
+    "precedence_rank": 5,
+    "department": "Human Resources",
+    "description": "Test fixture containing outdated leave rules (20 days leave, 30 days carry-forward). Used to verify shadow rejection of expired policies."
+  },
+  {
+    "file_name": "Travel_Allowance_Policy_v3.0_2035_1789994375.pdf",
+    "policy_id": "TEST-TRAVEL-2035",
+    "title": "Travel Allowance Policy 2035 [DRAFT TEST FIXTURE]",
+    "version": "3.0-DRAFT",
+    "status": "draft",
+    "effective_date": "2035-01-01",
+    "is_latest": false,
+    "precedence_rank": 5,
+    "department": "Finance",
+    "description": "Test fixture containing draft 2035 travel rules ($500 per diem). Used to verify shadow rejection of draft policies."
+  },
+  {
+    "file_name": "executive_leave_override_memo_2026.md",
+    "policy_id": "IIMA-HR-STAFF-ADDENDUM",
+    "title": "Executive Special Leave and Encashment Addendum",
+    "version": "1.0",
+    "status": "approved",
+    "effective_date": "2026-05-15",
+    "is_latest": true,
+    "precedence_rank": 3,
+    "department": "Executive HR Advisory Committee",
+    "description": "Departmental addendum restricting EL accumulation to 180 days for executive cadre. Deliberately conflicts with Section 5.2.2 of the Staff HR Manual to evaluate conflict synthesis and scope differentiation."
+  }
+]

@@ -1,0 +1,274 @@
+[
+  {
+    "id": "Q01",
+    "category": "answerable_standard",
+    "question": "What is the entitlement for casual leave in a calendar year for administrative staff?",
+    "expected_status": "answered",
+    "target_document": "IIMA HR Policy Manual (Staff)",
+    "expected_fact": "8 days for a calendar year, subject to a maximum of 5 days at a time"
+  },
+  {
+    "id": "Q02",
+    "category": "answerable_standard",
+    "question": "Can casual leave be accumulated or carried forward to the following calendar year?",
+    "expected_status": "answered",
+    "target_document": "IIMA HR Policy Manual (Staff)",
+    "expected_fact": "Casual leave cannot be accumulated and lapses at the end of the year"
+  },
+  {
+    "id": "Q03",
+    "category": "answerable_standard",
+    "question": "What is the maximum accumulation limit or ceiling on Earned Leave?",
+    "expected_status": "answered",
+    "target_document": "IIMA HR Policy Manual (Staff)",
+    "expected_fact": "The existing ceiling on the accumulation of Earned Leave is 300 days"
+  },
+  {
+    "id": "Q04",
+    "category": "answerable_standard",
+    "question": "How many days of Earned Leave are credited to an employee each year and on what dates?",
+    "expected_status": "answered",
+    "target_document": "IIMA HR Policy Manual (Staff)",
+    "expected_fact": "30 days per year; 15 days on 1st of January and 15 days on 1st of July"
+  },
+  {
+    "id": "Q05",
+    "category": "answerable_standard",
+    "question": "What is the maximum number of Earned Leave days that can be availed at a single time?",
+    "expected_status": "answered",
+    "target_document": "IIMA HR Policy Manual (Staff)",
+    "expected_fact": "Earned Leave can be availed up to 180 days at a time"
+  },
+  {
+    "id": "Q06",
+    "category": "answerable_standard",
+    "question": "What are the rules regarding encashment of Earned Leave during LTC?",
+    "expected_status": "answered",
+    "target_document": "IIMA HR Policy Manual (Staff)",
+    "expected_fact": "Encashment of EL is limited to 10 days on one occasion while availing LTC, and the balance at credit must be not less than 30 days"
+  },
+  {
+    "id": "Q07",
+    "category": "answerable_standard",
+    "question": "To whom should a whistleblower address protected disclosures and what is the official email id?",
+    "expected_status": "answered",
+    "target_document": "IIMA Whistleblower Policy",
+    "expected_fact": "Chairperson, Whistleblower Committee at whistleblower@iima.ac.in"
+  },
+  {
+    "id": "Q08",
+    "category": "answerable_standard",
+    "question": "What is the normal timeline within which whistleblower investigations must be completed?",
+    "expected_status": "answered",
+    "target_document": "IIMA Whistleblower Policy",
+    "expected_fact": "Investigations normally will be completed in 45 days"
+  },
+  {
+    "id": "Q09",
+    "category": "answerable_standard",
+    "question": "If an allegation implicates the Director of the Institute under the Whistleblower Policy, to whom is the report submitted?",
+    "expected_status": "answered",
+    "target_document": "IIMA Whistleblower Policy",
+    "expected_fact": "Chairperson of the Audit Committee of the Board"
+  },
+  {
+    "id": "Q10",
+    "category": "answerable_standard",
+    "question": "For how long must protected disclosures and investigation documents be retained?",
+    "expected_status": "answered",
+    "target_document": "IIMA Whistleblower Policy",
+    "expected_fact": "Period of 5 years or such other period as specified by law"
+  },
+  {
+    "id": "Q11",
+    "category": "answerable_standard",
+    "question": "What are the standard working hours and lunch break under the Employee Workplace Policy 2026?",
+    "expected_status": "answered",
+    "target_document": "Employee Workplace Policy Manual",
+    "expected_fact": "Monday to Friday, 9:30 AM to 6:00 PM, including a 30-minute lunch break"
+  },
+  {
+    "id": "Q12",
+    "category": "answerable_standard",
+    "question": "What is the maximum number of days per month an employee is permitted to work remotely?",
+    "expected_status": "answered",
+    "target_document": "Employee Workplace Policy Manual",
+    "expected_fact": "Up to 8 working days per calendar month"
+  },
+  {
+    "id": "Q13",
+    "category": "answerable_standard",
+    "question": "What is the monthly reimbursement limit for home broadband internet for approved remote workers?",
+    "expected_status": "answered",
+    "target_document": "Employee Workplace Policy Manual",
+    "expected_fact": "Up to Rs 1,200 per month with service provider invoice"
+  },
+  {
+    "id": "Q14",
+    "category": "answerable_standard",
+    "question": "Does IIMA sell or rent personal information collected on its website to commercial third parties?",
+    "expected_status": "answered",
+    "target_document": "IIMA Website Privacy Policy & Terms of Use",
+    "expected_fact": "No, IIMA does not rent, sell, or disclose personal data to external third-party commercial organizations"
+  },
+  {
+    "id": "Q15",
+    "category": "answerable_standard",
+    "question": "Under what statutory Act is the Indian Institute of Management Ahmedabad governed?",
+    "expected_status": "answered",
+    "target_document": "IIMA Gazetted Regulations (IIM Act 2017)",
+    "expected_fact": "Indian Institutes of Management Act, 2017"
+  },
+  {
+    "id": "Q16",
+    "category": "version_precedence",
+    "question": "Does the 2026 HR policy manual supersede the 2024 manual?",
+    "expected_status": "answered",
+    "target_document": "IIMA HR Policy Manual (Staff)",
+    "expected_fact": "Yes, page 3 declaration states the 2026 manual supersedes all previous manuals and memorandums"
+  },
+  {
+    "id": "Q17",
+    "category": "version_precedence",
+    "question": "According to the latest approved policy, what is the annual leave ceiling for staff?",
+    "expected_status": "answered",
+    "target_document": "IIMA HR Policy Manual (Staff)",
+    "expected_fact": "300 days according to the 2026 manual"
+  },
+  {
+    "id": "Q18",
+    "category": "version_precedence",
+    "question": "Which edition of the Staff HR Policy Manual is currently active and in effect?",
+    "expected_status": "answered",
+    "target_document": "IIMA HR Policy Manual (Staff)",
+    "expected_fact": "2026 Manual (effective 20 March 2026)"
+  },
+  {
+    "id": "Q19",
+    "category": "version_precedence",
+    "question": "What is the approved encashment limit of Earned Leave under current regulations?",
+    "expected_status": "answered",
+    "target_document": "IIMA HR Policy Manual (Staff)",
+    "expected_fact": "10 days during LTC with minimum 30 days balance"
+  },
+  {
+    "id": "Q20",
+    "category": "version_precedence",
+    "question": "How many days of casual leave are admissible per year under the active 2026 HR manual?",
+    "expected_status": "answered",
+    "target_document": "IIMA HR Policy Manual (Staff)",
+    "expected_fact": "8 days for a calendar year"
+  },
+  {
+    "id": "Q21",
+    "category": "policy_conflict",
+    "question": "What is the maximum Earned Leave accumulation ceiling: 300 days or 180 days?",
+    "expected_status": "policy_conflict",
+    "target_document": "IIMA HR Policy Manual (Staff) & Executive Special Leave Addendum",
+    "expected_fact": "Conflict between General Staff Manual (300 days) and Executive Addendum (180 days for executive cadre)"
+  },
+  {
+    "id": "Q22",
+    "category": "policy_conflict",
+    "question": "Are executive staff subject to a different Earned Leave accumulation limit than general staff?",
+    "expected_status": "policy_conflict",
+    "target_document": "Executive Special Leave and Encashment Addendum",
+    "expected_fact": "Identifies that the Executive Addendum restricts EL to 180 days for Senior Administrative Officers while general staff have 300 days"
+  },
+  {
+    "id": "Q23",
+    "category": "policy_conflict",
+    "question": "How are excess leave days treated at year-end for executive cadre employees under the 2026 memorandum?",
+    "expected_status": "policy_conflict",
+    "target_document": "Executive Special Leave and Encashment Addendum",
+    "expected_fact": "Days exceeding 180 are converted to cash encashment up to 15 days, with the remainder lapsing"
+  },
+  {
+    "id": "Q24",
+    "category": "policy_conflict",
+    "question": "If the Departmental Executive Addendum contradicts the Gazetted Regulations, which document prevails?",
+    "expected_status": "answered",
+    "target_document": "Executive Special Leave and Encashment Addendum / Gazetted Regulations",
+    "expected_fact": "Statutory Gazetted Regulations supersede the departmental addendum"
+  },
+  {
+    "id": "Q25",
+    "category": "draft_expired_rejected",
+    "question": "What was the annual leave entitlement under the 2021 Leave Policy?",
+    "expected_status": "draft_or_expired_rejected",
+    "target_document": "Leave Policy 2021 [OUTDATED TEST FIXTURE]",
+    "expected_fact": "Rejected because Leave Policy 2021 is marked as EXPIRED"
+  },
+  {
+    "id": "Q26",
+    "category": "draft_expired_rejected",
+    "question": "Can I claim the $500 per diem travel allowance specified in the 2035 draft travel guidelines?",
+    "expected_status": "draft_or_expired_rejected",
+    "target_document": "Travel Allowance Policy 2035 [DRAFT TEST FIXTURE]",
+    "expected_fact": "Rejected because Travel Allowance Policy 2035 is marked as DRAFT"
+  },
+  {
+    "id": "Q27",
+    "category": "draft_expired_rejected",
+    "question": "What were the leave encashment provisions under the expired 2021 regulations?",
+    "expected_status": "draft_or_expired_rejected",
+    "target_document": "Leave Policy 2021 [OUTDATED TEST FIXTURE]",
+    "expected_fact": "Rejected as the 2021 policy is expired/outdated"
+  },
+  {
+    "id": "Q28",
+    "category": "draft_expired_rejected",
+    "question": "Is the draft 2035 travel policy approved for employee expense claims?",
+    "expected_status": "draft_or_expired_rejected",
+    "target_document": "Travel Allowance Policy 2035 [DRAFT TEST FIXTURE]",
+    "expected_fact": "Rejected because it is a draft policy and cannot be cited as binding"
+  },
+  {
+    "id": "Q29",
+    "category": "unanswerable_out_of_scope",
+    "question": "What is the institute's pet insurance reimbursement policy for staff?",
+    "expected_status": "insufficient_information",
+    "target_document": "None",
+    "expected_fact": "Information not found in available approved documents"
+  },
+  {
+    "id": "Q30",
+    "category": "unanswerable_out_of_scope",
+    "question": "What are the corporate discounts available for employee gym memberships in Ahmedabad?",
+    "expected_status": "insufficient_information",
+    "target_document": "None",
+    "expected_fact": "Information not found in available approved documents"
+  },
+  {
+    "id": "Q31",
+    "category": "unanswerable_out_of_scope",
+    "question": "How much stock option equity is granted to non-teaching administrative staff?",
+    "expected_status": "insufficient_information",
+    "target_document": "None",
+    "expected_fact": "Information not found in available approved documents"
+  },
+  {
+    "id": "Q32",
+    "category": "unanswerable_out_of_scope",
+    "question": "What is the policy for company-sponsored electric vehicle home charging installation?",
+    "expected_status": "insufficient_information",
+    "target_document": "None",
+    "expected_fact": "Information not found in available approved documents"
+  },
+  {
+    "id": "Q33",
+    "category": "unanswerable_out_of_scope",
+    "question": "What is the employee subsidy for international personal holiday flight bookings?",
+    "expected_status": "insufficient_information",
+    "target_document": "None",
+    "expected_fact": "Information not found in available approved documents"
+  },
+  {
+    "id": "Q34",
+    "category": "unanswerable_out_of_scope",
+    "question": "Can an employee bring personal cryptocurrency hardware wallets into the office server room?",
+    "expected_status": "insufficient_information",
+    "target_document": "None",
+    "expected_fact": "Information not found in available approved documents"
+  }
+]

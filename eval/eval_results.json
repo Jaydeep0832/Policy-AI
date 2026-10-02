@@ -1,0 +1,726 @@
+{
+  "overall_accuracy_pct": 88.24,
+  "total_tests": 34,
+  "passed_tests": 30,
+  "category_breakdown": {
+    "answerable_standard": {
+      "total": 15,
+      "passed": 13
+    },
+    "version_precedence": {
+      "total": 5,
+      "passed": 4
+    },
+    "policy_conflict": {
+      "total": 4,
+      "passed": 3
+    },
+    "draft_expired_rejected": {
+      "total": 4,
+      "passed": 4
+    },
+    "unanswerable_out_of_scope": {
+      "total": 6,
+      "passed": 6
+    }
+  },
+  "records": [
+    {
+      "id": "Q01",
+      "category": "answerable_standard",
+      "question": "What is the entitlement for casual leave in a calendar year for administrative staff?",
+      "expected_status": "answered",
+      "actual_status": "answered",
+      "has_conflict": false,
+      "citation_count": 1,
+      "citations": [
+        {
+          "chunk_id": "IIMA-HR-STAFF_p69_c67",
+          "document": "IIMA HR Policy Manual (Staff)",
+          "version": "2026.1",
+          "page_number": 69,
+          "section": "IIMA HR Policy Manual (Staff) > 59",
+          "quoted_snippet": "Casual leave admissible to an employee is eight days for a calendar year, subject to the condition that not more than five days\u2019 casual leave may be allowed at a time.",
+          "verified_in_source": true
+        }
+      ],
+      "answer": "Administrative staff are entitled to eight days of casual leave per calendar year. This leave is subject to the condition that not more than five days of casual leave may be allowed at a time.",
+      "latency_sec": 1.22,
+      "passed": true
+    },
+    {
+      "id": "Q02",
+      "category": "answerable_standard",
+      "question": "Can casual leave be accumulated or carried forward to the following calendar year?",
+      "expected_status": "answered",
+      "actual_status": "answered",
+      "has_conflict": false,
+      "citation_count": 1,
+      "citations": [
+        {
+          "chunk_id": "IIMA-HR-STAFF_p69_c67",
+          "document": "IIMA HR Policy Manual (Staff)",
+          "version": "2026.1",
+          "page_number": 69,
+          "section": "IIMA HR Policy Manual (Staff) > 59",
+          "quoted_snippet": "5.1.7 Casual leave cannot be accumulated. Leave not availed in a particular calendar year will lapse at the end of that year.",
+          "verified_in_source": true
+        }
+      ],
+      "answer": "No, casual leave cannot be accumulated. Any leave not availed in a particular calendar year will lapse at the end of that year.",
+      "latency_sec": 0.69,
+      "passed": true
+    },
+    {
+      "id": "Q03",
+      "category": "answerable_standard",
+      "question": "What is the maximum accumulation limit or ceiling on Earned Leave?",
+      "expected_status": "answered",
+      "actual_status": "policy_conflict",
+      "has_conflict": true,
+      "citation_count": 3,
+      "citations": [
+        {
+          "chunk_id": "IIMA-HR-STAFF-ADDENDUM_p1_c1",
+          "document": "Executive Special Leave and Encashment Addendum",
+          "version": "1.0",
+          "page_number": 1,
+          "section": "Executive Special Leave and Encashment Addendum > ### Section 3: Legal Hierarchy & Administrative Precedence",
+          "quoted_snippet": "Notwithstanding Section 5.2.2 of the Staff HR Policy Manual 2026 (which provides an institutional general ceiling of 300 days), the maximum permissible ceiling on the accumulation of Earned Leave for Executive Cadre Staff covered under this Memorandum shall be restricted to 180 days.",
+          "verified_in_source": true
+        },
+        {
+          "chunk_id": "IIMA-HR-STAFF-ADDENDUM_p1_c1",
+          "document": "Executive Special Leave and Encashment Addendum",
+          "version": "1.0",
+          "page_number": 1,
+          "section": "Executive Special Leave and Encashment Addendum > ### Section 3: Legal Hierarchy & Administrative Precedence",
+          "quoted_snippet": "Any Earned Leave standing to the credit of an Executive Cadre employee in excess of 180 days at the close of the calendar year (31st December) shall be automatically converted to cash encashment up to a maximum of 15 days, with the remainder lapsing immediately.",
+          "verified_in_source": true
+        },
+        {
+          "chunk_id": "IIMA-HR-STAFF_p68_c66",
+          "document": "IIMA HR Policy Manual (Staff)",
+          "version": "2026.1",
+          "page_number": 68,
+          "section": "IIMA HR Policy Manual (Staff) > 58",
+          "quoted_snippet": "Notwithstanding Section 5.2.2 of the Staff HR Policy Manual 2026 (which provides an institutional general ceiling of 300 days)",
+          "verified_in_source": false
+        }
+      ],
+      "answer": "The maximum accumulation limit on Earned Leave differs depending on the cadre. For Executive Cadre Staff covered by the Executive Special Leave and Encashment Addendum, the ceiling is 180 days. For all other staff, the Staff HR Policy Manual 2026 sets a general ceiling of 300 days.",
+      "latency_sec": 1.88,
+      "passed": true
+    },
+    {
+      "id": "Q04",
+      "category": "answerable_standard",
+      "question": "How many days of Earned Leave are credited to an employee each year and on what dates?",
+      "expected_status": "answered",
+      "actual_status": "answered",
+      "has_conflict": false,
+      "citation_count": 1,
+      "citations": [
+        {
+          "chunk_id": "IIMA-HR-STAFF_p69_c67",
+          "document": "IIMA HR Policy Manual (Staff)",
+          "version": "2026.1",
+          "page_number": 69,
+          "section": "IIMA HR Policy Manual (Staff) > 59",
+          "quoted_snippet": "The administrative staff is entitled to 30 days of Earned Leave. Fifteen days will be credited to the employee\u2019s account on 1st of January and 15 days on 1st of July.",
+          "verified_in_source": true
+        }
+      ],
+      "answer": "An employee receives a total of 30 days of Earned Leave each year, credited in two equal installments of 15 days each \u2013 the first 15 days on 1\u202fJanuary and the second 15 days on 1\u202fJuly.",
+      "latency_sec": 1.62,
+      "passed": true
+    },
+    {
+      "id": "Q05",
+      "category": "answerable_standard",
+      "question": "What is the maximum number of Earned Leave days that can be availed at a single time?",
+      "expected_status": "answered",
+      "actual_status": "answered",
+      "has_conflict": false,
+      "citation_count": 1,
+      "citations": [
+        {
+          "chunk_id": "IIMA-HR-STAFF_p69_c67",
+          "document": "IIMA HR Policy Manual (Staff)",
+          "version": "2026.1",
+          "page_number": 69,
+          "section": "IIMA HR Policy Manual (Staff) > 59",
+          "quoted_snippet": "Earned Leave can be availed up to 180 days at a time.",
+          "verified_in_source": true
+        }
+      ],
+      "answer": "An employee may avail up to 180 days of Earned Leave at a single time.",
+      "latency_sec": 1.27,
+      "passed": true
+    },
+    {
+      "id": "Q06",
+      "category": "answerable_standard",
+      "question": "What are the rules regarding encashment of Earned Leave during LTC?",
+      "expected_status": "answered",
+      "actual_status": "insufficient_information",
+      "has_conflict": false,
+      "citation_count": 2,
+      "citations": [
+        {
+          "chunk_id": "IIMA-HR-STAFF_p131_c129",
+          "document": "IIMA HR Policy Manual (Staff)",
+          "version": "2026.1",
+          "page_number": 131,
+          "section": "IIMA HR Policy Manual (Staff) > 108 IIMA HR Policy Manual 2026",
+          "quoted_snippet": "If yes, number of days of Earned Leave encashment (maximum 10 days)",
+          "verified_in_source": true
+        },
+        {
+          "chunk_id": "IIMA-HR-STAFF-ADDENDUM_p1_c1",
+          "document": "Executive Special Leave and Encashment Addendum",
+          "version": "1.0",
+          "page_number": 1,
+          "section": "Executive Special Leave and Encashment Addendum > ### Section 3: Legal Hierarchy & Administrative Precedence",
+          "quoted_snippet": "Any Earned Leave standing to the credit of an Executive Cadre employee in excess of 180 days at the close of the calendar year (31st December) shall be automatically converted to cash encashment up to a maximum of 15 days, with the remainder lapsing immediately.",
+          "verified_in_source": true
+        }
+      ],
+      "answer": "The provided policy excerpts do not contain specific rules regarding the encashment of Earned Leave during Leave Travel Concession (LTC). While the LTC Intimation Form mentions a field for 'number of days of Earned Leave encashment (maximum 10 days)', it does not provide the procedural rules, eligibility criteria, or conditions for such encashment. The Executive Addendum discusses EL encashment for excess balances over 180 days for Executive Cadre staff, but does not link this to LTC. Therefore, the available documents do not contain enough information to answer the question about the rules for EL encashment during LTC.",
+      "latency_sec": 9.32,
+      "passed": false
+    },
+    {
+      "id": "Q07",
+      "category": "answerable_standard",
+      "question": "To whom should a whistleblower address protected disclosures and what is the official email id?",
+      "expected_status": "answered",
+      "actual_status": "answered",
+      "has_conflict": false,
+      "citation_count": 1,
+      "citations": [
+        {
+          "chunk_id": "IIMA-GOV-WHISTLEBLOWER_p1_c3",
+          "document": "IIMA Whistleblower Policy",
+          "version": "1.0",
+          "page_number": 1,
+          "section": "IIMA Whistleblower Policy > ### Decision",
+          "quoted_snippet": "The Whistleblower should address the details of the protected disclosure in writing through email to the email id whistleblower@iima.ac.in or in writing along with a covering letter in legible handwriting in English or a regional language at following address: Chairperson, Whistleblower Committee, Indian Institute of Management Ahmedabad, Vastrapur, Ahmedabad - 380015",
+          "verified_in_source": true
+        }
+      ],
+      "answer": "The whistleblower should address the protected disclosure to the Chairperson of the Whistleblower Committee, and the official email id is whistleblower@iima.ac.in.",
+      "latency_sec": 1.14,
+      "passed": true
+    },
+    {
+      "id": "Q08",
+      "category": "answerable_standard",
+      "question": "What is the normal timeline within which whistleblower investigations must be completed?",
+      "expected_status": "answered",
+      "actual_status": "answered",
+      "has_conflict": false,
+      "citation_count": 1,
+      "citations": [
+        {
+          "chunk_id": "IIMA-GOV-WHISTLEBLOWER_p1_c3",
+          "document": "IIMA Whistleblower Policy",
+          "version": "1.0",
+          "page_number": 1,
+          "section": "IIMA Whistleblower Policy > ### Decision",
+          "quoted_snippet": "The investigations normally will be completed in 45 days. In exceptional cases, the investigation may go beyond 45 days.",
+          "verified_in_source": true
+        }
+      ],
+      "answer": "Whistleblower investigations are normally completed within 45 days, although exceptional cases may require more time.",
+      "latency_sec": 1.59,
+      "passed": true
+    },
+    {
+      "id": "Q09",
+      "category": "answerable_standard",
+      "question": "If an allegation implicates the Director of the Institute under the Whistleblower Policy, to whom is the report submitted?",
+      "expected_status": "answered",
+      "actual_status": "answered",
+      "has_conflict": false,
+      "citation_count": 1,
+      "citations": [
+        {
+          "chunk_id": "IIMA-GOV-WHISTLEBLOWER_p1_c4",
+          "document": "IIMA Whistleblower Policy",
+          "version": "1.0",
+          "page_number": 1,
+          "section": "IIMA Whistleblower Policy > ### Retention of Documents",
+          "quoted_snippet": "If the Director is implicated, then the submission of the report is to be made to the Chairperson of the Audit Committee of the Board.",
+          "verified_in_source": true
+        }
+      ],
+      "answer": "If the Director of the Institute is implicated, the investigation report is submitted to the Chairperson of the Audit Committee of the Board.",
+      "latency_sec": 9.26,
+      "passed": true
+    },
+    {
+      "id": "Q10",
+      "category": "answerable_standard",
+      "question": "For how long must protected disclosures and investigation documents be retained?",
+      "expected_status": "answered",
+      "actual_status": "answered",
+      "has_conflict": false,
+      "citation_count": 1,
+      "citations": [
+        {
+          "chunk_id": "IIMA-GOV-WHISTLEBLOWER_p1_c5",
+          "document": "IIMA Whistleblower Policy",
+          "version": "1.0",
+          "page_number": 1,
+          "section": "IIMA Whistleblower Policy > ### Retention of Documents",
+          "quoted_snippet": "All protected disclosures, statements of witnesses or any other documented material along with the investigation report of the Committee shall be retained by the Chairperson for a period of 5 years or such other period as specified by any other law in force, whichever is more.",
+          "verified_in_source": true
+        }
+      ],
+      "answer": "Protected disclosures, statements of witnesses, other documented material, and the investigation report of the Committee must be retained by the Chairperson for a period of 5 years, or for such other period as specified by any other law in force, whichever is more.",
+      "latency_sec": 0.77,
+      "passed": true
+    },
+    {
+      "id": "Q11",
+      "category": "answerable_standard",
+      "question": "What are the standard working hours and lunch break under the Employee Workplace Policy 2026?",
+      "expected_status": "answered",
+      "actual_status": "answered",
+      "has_conflict": false,
+      "citation_count": 1,
+      "citations": [
+        {
+          "chunk_id": "IIMA-WORKPLACE-2026_p1_c1",
+          "document": "Employee Workplace Policy Manual",
+          "version": "2.0",
+          "page_number": 1,
+          "section": "Employee Workplace Policy Manual",
+          "quoted_snippet": "The standard working schedule is Monday to Friday, 9:30 AM to 6:00 PM, including a 30-minute lunch break.",
+          "verified_in_source": true
+        }
+      ],
+      "answer": "The Employee Workplace Policy 2026 specifies that the standard working schedule is Monday to Friday, 9:30\u202fAM to 6:00\u202fPM, and this includes a 30\u2011minute lunch break.",
+      "latency_sec": 1.46,
+      "passed": true
+    },
+    {
+      "id": "Q12",
+      "category": "answerable_standard",
+      "question": "What is the maximum number of days per month an employee is permitted to work remotely?",
+      "expected_status": "answered",
+      "actual_status": "answered",
+      "has_conflict": false,
+      "citation_count": 1,
+      "citations": [
+        {
+          "chunk_id": "IIMA-WORKPLACE-2026_p1_c1",
+          "document": "Employee Workplace Policy Manual",
+          "version": "2.0",
+          "page_number": 1,
+          "section": "Employee Workplace Policy Manual",
+          "quoted_snippet": "Eligible employees may work remotely for up to 8 working days per calendar month.",
+          "verified_in_source": true
+        }
+      ],
+      "answer": "Eligible employees may work remotely for up to 8 working days per calendar month.",
+      "latency_sec": 8.87,
+      "passed": true
+    },
+    {
+      "id": "Q13",
+      "category": "answerable_standard",
+      "question": "What is the monthly reimbursement limit for home broadband internet for approved remote workers?",
+      "expected_status": "answered",
+      "actual_status": "answered",
+      "has_conflict": false,
+      "citation_count": 1,
+      "citations": [
+        {
+          "chunk_id": "IIMA-WORKPLACE-2026_p3_c3",
+          "document": "Employee Workplace Policy Manual",
+          "version": "2.0",
+          "page_number": 3,
+          "section": "Employee Workplace Policy Manual",
+          "quoted_snippet": "Employees approved for remote work may claim reimbursement for home broadband charges up to I1,200 per month. The claim must include the service-provider invoice.",
+          "verified_in_source": true
+        }
+      ],
+      "answer": "The monthly reimbursement limit for home broadband internet for approved remote workers is I1,200 per month.",
+      "latency_sec": 0.63,
+      "passed": true
+    },
+    {
+      "id": "Q14",
+      "category": "answerable_standard",
+      "question": "Does IIMA sell or rent personal information collected on its website to commercial third parties?",
+      "expected_status": "answered",
+      "actual_status": "answered",
+      "has_conflict": false,
+      "citation_count": 1,
+      "citations": [
+        {
+          "chunk_id": "IIMA-LEGAL-PRIVACY_p1_c2",
+          "document": "IIMA Website Privacy Policy & Terms of Use",
+          "version": "1.0",
+          "page_number": 1,
+          "section": "IIMA Website Privacy Policy & Terms of Use > ### 5. Disclaimer and Limitation of Liability",
+          "quoted_snippet": "IIMA does not rent, sell, or disclose personal data collected on this website to external third-party commercial organizations.",
+          "verified_in_source": false
+        }
+      ],
+      "answer": "No. According to the IIMA Website Privacy Policy, IIMA does not rent, sell, or disclose personal data collected on its website to external third\u2011party commercial organizations.",
+      "latency_sec": 1.96,
+      "passed": true
+    },
+    {
+      "id": "Q15",
+      "category": "answerable_standard",
+      "question": "Under what statutory Act is the Indian Institute of Management Ahmedabad governed?",
+      "expected_status": "answered",
+      "actual_status": "insufficient_information",
+      "has_conflict": false,
+      "citation_count": 0,
+      "citations": [],
+      "answer": "All inference providers are currently unavailable or rate limited. Please try again in a moment.",
+      "latency_sec": 8.98,
+      "passed": false
+    },
+    {
+      "id": "Q16",
+      "category": "version_precedence",
+      "question": "Does the 2026 HR policy manual supersede the 2024 manual?",
+      "expected_status": "answered",
+      "actual_status": "answered",
+      "has_conflict": false,
+      "citation_count": 1,
+      "citations": [
+        {
+          "chunk_id": "IIMA-HR-STAFF_p3_c2",
+          "document": "IIMA HR Policy Manual (Staff)",
+          "version": "2024.1",
+          "page_number": 3,
+          "section": "IIMA HR Policy Manual (Staff)",
+          "quoted_snippet": "This Manual supersedes all previous manuals, handbooks, and memorandums that may have been issued from time to time on subjects covered in this Manual.",
+          "verified_in_source": true
+        }
+      ],
+      "answer": "Yes, the 2026 HR Policy Manual supersedes all previous manuals, handbooks, and memorandums on subjects covered in this Manual.",
+      "latency_sec": 0.66,
+      "passed": true
+    },
+    {
+      "id": "Q17",
+      "category": "version_precedence",
+      "question": "According to the latest approved policy, what is the annual leave ceiling for staff?",
+      "expected_status": "answered",
+      "actual_status": "insufficient_information",
+      "has_conflict": false,
+      "citation_count": 0,
+      "citations": [],
+      "answer": "The available approved policy documents do not contain sufficient information to answer this question.",
+      "latency_sec": 0.1,
+      "passed": false
+    },
+    {
+      "id": "Q18",
+      "category": "version_precedence",
+      "question": "Which edition of the Staff HR Policy Manual is currently active and in effect?",
+      "expected_status": "answered",
+      "actual_status": "answered",
+      "has_conflict": false,
+      "citation_count": 1,
+      "citations": [
+        {
+          "chunk_id": "IIMA-HR-STAFF_p3_c2",
+          "document": "IIMA HR Policy Manual (Staff)",
+          "version": "2024.1",
+          "page_number": 3,
+          "section": "IIMA HR Policy Manual (Staff)",
+          "quoted_snippet": "This Manual supersedes all previous manuals, handbooks, and memorandums that may have been issued from time to time on subjects covered in this Manual.",
+          "verified_in_source": true
+        }
+      ],
+      "answer": "The currently active and in\u2011effect edition is the IIMA HR Policy Manual 2026.",
+      "latency_sec": 1.18,
+      "passed": true
+    },
+    {
+      "id": "Q19",
+      "category": "version_precedence",
+      "question": "What is the approved encashment limit of Earned Leave under current regulations?",
+      "expected_status": "answered",
+      "actual_status": "answered",
+      "has_conflict": false,
+      "citation_count": 1,
+      "citations": [
+        {
+          "chunk_id": "IIMA-HR-STAFF-ADDENDUM_p1_c1",
+          "document": "Executive Special Leave and Encashment Addendum",
+          "version": "1.0",
+          "page_number": 1,
+          "section": "Executive Special Leave and Encashment Addendum > ### Section 3: Legal Hierarchy & Administrative Precedence",
+          "quoted_snippet": "Any Earned Leave standing to the credit of an Executive Cadre employee in excess of 180 days at the close of the calendar year (31st December) shall be automatically converted to cash encashment up to a maximum of 15 days, with the remainder lapsing immediately.",
+          "verified_in_source": true
+        }
+      ],
+      "answer": "The approved encashment limit for Earned Leave is up to 15 days. For Executive Cadre employees who have more than 180 days of Earned Leave at the end of the calendar year, the excess is automatically converted to cash encashment up to a maximum of 15 days, with any remaining balance lapsing.",
+      "latency_sec": 2.35,
+      "passed": true
+    },
+    {
+      "id": "Q20",
+      "category": "version_precedence",
+      "question": "How many days of casual leave are admissible per year under the active 2026 HR manual?",
+      "expected_status": "answered",
+      "actual_status": "answered",
+      "has_conflict": false,
+      "citation_count": 1,
+      "citations": [
+        {
+          "chunk_id": "IIMA-HR-STAFF_p69_c67",
+          "document": "IIMA HR Policy Manual (Staff)",
+          "version": "2026.1",
+          "page_number": 69,
+          "section": "IIMA HR Policy Manual (Staff) > 59",
+          "quoted_snippet": "Casual leave admissible to an employee is eight days for a calendar year, subject to the condition that not more than five days\u2019 casual leave may be allowed at a time.",
+          "verified_in_source": true
+        }
+      ],
+      "answer": "Eight days of casual leave are admissible per calendar year.",
+      "latency_sec": 9.26,
+      "passed": true
+    },
+    {
+      "id": "Q21",
+      "category": "policy_conflict",
+      "question": "What is the maximum Earned Leave accumulation ceiling: 300 days or 180 days?",
+      "expected_status": "policy_conflict",
+      "actual_status": "policy_conflict",
+      "has_conflict": true,
+      "citation_count": 2,
+      "citations": [
+        {
+          "chunk_id": "IIMA-HR-STAFF-ADDENDUM_p1_c1",
+          "document": "Executive Special Leave and Encashment Addendum",
+          "version": "1.0",
+          "page_number": 1,
+          "section": "Executive Special Leave and Encashment Addendum > ### Section 3: Legal Hierarchy & Administrative Precedence",
+          "quoted_snippet": "Notwithstanding Section 5.2.2 of the Staff HR Policy Manual 2026 (which provides an institutional general ceiling of 300 days), the maximum permissible ceiling on the accumulation of Earned Leave for Executive Cadre Staff covered under this Memorandum shall be restricted to 180 days.",
+          "verified_in_source": true
+        },
+        {
+          "chunk_id": "IIMA-HR-STAFF-ADDENDUM_p1_c1",
+          "document": "Executive Special Leave and Encashment Addendum",
+          "version": "1.0",
+          "page_number": 1,
+          "section": "Executive Special Leave and Encashment Addendum > ### Section 3: Legal Hierarchy & Administrative Precedence",
+          "quoted_snippet": "For matters concerning general non-executive staff, the Master Staff HR Policy Manual 2026 remains the sole authoritative baseline.",
+          "verified_in_source": true
+        }
+      ],
+      "answer": "The maximum Earned Leave accumulation ceiling depends on the employee's cadre. For general staff, the ceiling is 300 days as per the IIMA HR Policy Manual (Staff) 2026. However, for Executive Cadre Staff (Senior Administrative Officers Level 11 and above), the ceiling is restricted to 180 days as per the Executive Special Leave and Encashment Addendum. The Addendum explicitly states that its 180-day limit applies 'Notwithstanding' the general 300-day ceiling in the Staff HR Policy Manual for the specific executive cadres it covers.",
+      "latency_sec": 1.59,
+      "passed": true
+    },
+    {
+      "id": "Q22",
+      "category": "policy_conflict",
+      "question": "Are executive staff subject to a different Earned Leave accumulation limit than general staff?",
+      "expected_status": "policy_conflict",
+      "actual_status": "answered",
+      "has_conflict": false,
+      "citation_count": 2,
+      "citations": [
+        {
+          "chunk_id": "IIMA-HR-STAFF-ADDENDUM_p1_c1",
+          "document": "Executive Special Leave and Encashment Addendum",
+          "version": "1.0",
+          "page_number": 1,
+          "section": "Executive Special Leave and Encashment Addendum > ### Section 3: Legal Hierarchy & Administrative Precedence",
+          "quoted_snippet": "Notwithstanding Section 5.2.2 of the Staff HR Policy Manual 2026 (which provides an institutional general ceiling of 300 days), the maximum permissible ceiling on the accumulation of Earned Leave for Executive Cadre Staff ... shall be restricted to 180 days.",
+          "verified_in_source": true
+        },
+        {
+          "chunk_id": "IIMA-HR-STAFF_p69_c67",
+          "document": "IIMA HR Policy Manual (Staff)",
+          "version": "2026.1",
+          "page_number": 69,
+          "section": "IIMA HR Policy Manual (Staff) > 59",
+          "quoted_snippet": "The existing ceiling on the accumulation of EL is 300 days.",
+          "verified_in_source": true
+        }
+      ],
+      "answer": "Yes. For executive cadre staff the Executive Special Leave and Encashment Addendum sets a lower Earned Leave accumulation ceiling of 180 days, whereas the general staff ceiling in the IIMA HR Policy Manual 2026 is 300 days.",
+      "latency_sec": 2.32,
+      "passed": true
+    },
+    {
+      "id": "Q23",
+      "category": "policy_conflict",
+      "question": "How are excess leave days treated at year-end for executive cadre employees under the 2026 memorandum?",
+      "expected_status": "policy_conflict",
+      "actual_status": "answered",
+      "has_conflict": false,
+      "citation_count": 1,
+      "citations": [
+        {
+          "chunk_id": "IIMA-HR-STAFF-ADDENDUM_p1_c1",
+          "document": "Executive Special Leave and Encashment Addendum",
+          "version": "1.0",
+          "page_number": 1,
+          "section": "Executive Special Leave and Encashment Addendum > ### Section 3: Legal Hierarchy & Administrative Precedence",
+          "quoted_snippet": "Any Earned Leave standing to the credit of an Executive Cadre employee in excess of 180 days at the close of the calendar year (31st December) shall be automatically converted to cash encashment up to a maximum of 15 days, with the remainder lapsing immediately.",
+          "verified_in_source": true
+        }
+      ],
+      "answer": "For executive cadre staff, any Earned Leave balance that exceeds 180 days on 31\u202fDecember is handled as follows: the excess is automatically converted into cash encashment, but only up to a maximum of 15 days. Any remaining days beyond that 15\u2011day encashment limit lapse and are forfeited.",
+      "latency_sec": 1.23,
+      "passed": true
+    },
+    {
+      "id": "Q24",
+      "category": "policy_conflict",
+      "question": "If the Departmental Executive Addendum contradicts the Gazetted Regulations, which document prevails?",
+      "expected_status": "answered",
+      "actual_status": "insufficient_information",
+      "has_conflict": false,
+      "citation_count": 0,
+      "citations": [],
+      "answer": "All inference providers are currently unavailable or rate limited. Please try again in a moment.",
+      "latency_sec": 8.96,
+      "passed": false
+    },
+    {
+      "id": "Q25",
+      "category": "draft_expired_rejected",
+      "question": "What was the annual leave entitlement under the 2021 Leave Policy?",
+      "expected_status": "draft_or_expired_rejected",
+      "actual_status": "draft_or_expired_rejected",
+      "has_conflict": false,
+      "citation_count": 0,
+      "citations": [],
+      "answer": "The document 'Leave Policy 2021 [OUTDATED TEST FIXTURE]' (version 2021.1) is marked as EXPIRED and cannot be cited as binding policy. According to institutional governance rules, only approved, active policies (such as the 2026 Staff HR Policy Manual) may be used to answer official policy queries.",
+      "latency_sec": 0.01,
+      "passed": true
+    },
+    {
+      "id": "Q26",
+      "category": "draft_expired_rejected",
+      "question": "Can I claim the $500 per diem travel allowance specified in the 2035 draft travel guidelines?",
+      "expected_status": "draft_or_expired_rejected",
+      "actual_status": "draft_or_expired_rejected",
+      "has_conflict": false,
+      "citation_count": 0,
+      "citations": [],
+      "answer": "The document 'Travel Allowance Policy 2035 [DRAFT TEST FIXTURE]' (version 3.0-DRAFT) is marked as DRAFT and cannot be cited as binding policy. According to institutional governance rules, only approved, active policies (such as the 2026 Staff HR Policy Manual) may be used to answer official policy queries.",
+      "latency_sec": 0.01,
+      "passed": true
+    },
+    {
+      "id": "Q27",
+      "category": "draft_expired_rejected",
+      "question": "What were the leave encashment provisions under the expired 2021 regulations?",
+      "expected_status": "draft_or_expired_rejected",
+      "actual_status": "draft_or_expired_rejected",
+      "has_conflict": false,
+      "citation_count": 0,
+      "citations": [],
+      "answer": "The document 'Leave Policy 2021 [OUTDATED TEST FIXTURE]' (version 2021.1) is marked as EXPIRED and cannot be cited as binding policy. According to institutional governance rules, only approved, active policies (such as the 2026 Staff HR Policy Manual) may be used to answer official policy queries.",
+      "latency_sec": 0.01,
+      "passed": true
+    },
+    {
+      "id": "Q28",
+      "category": "draft_expired_rejected",
+      "question": "Is the draft 2035 travel policy approved for employee expense claims?",
+      "expected_status": "draft_or_expired_rejected",
+      "actual_status": "draft_or_expired_rejected",
+      "has_conflict": false,
+      "citation_count": 0,
+      "citations": [],
+      "answer": "The document 'IIMA HR Policy Manual (Staff)' (version 2024.1) is marked as SUPERSEDED and cannot be cited as binding policy. According to institutional governance rules, only approved, active policies (such as the 2026 Staff HR Policy Manual) may be used to answer official policy queries.",
+      "latency_sec": 0.01,
+      "passed": true
+    },
+    {
+      "id": "Q29",
+      "category": "unanswerable_out_of_scope",
+      "question": "What is the institute's pet insurance reimbursement policy for staff?",
+      "expected_status": "insufficient_information",
+      "actual_status": "insufficient_information",
+      "has_conflict": false,
+      "citation_count": 0,
+      "citations": [],
+      "answer": "The provided policy excerpts do not contain any information regarding a pet insurance reimbursement policy for staff. The documents cover Group Mediclaim Insurance for employees, spouses, children, and parents, as well as Group Term Insurance, but do not mention coverage for pets.",
+      "latency_sec": 0.72,
+      "passed": true
+    },
+    {
+      "id": "Q30",
+      "category": "unanswerable_out_of_scope",
+      "question": "What are the corporate discounts available for employee gym memberships in Ahmedabad?",
+      "expected_status": "insufficient_information",
+      "actual_status": "insufficient_information",
+      "has_conflict": false,
+      "citation_count": 0,
+      "citations": [],
+      "answer": "The available approved policy documents do not contain sufficient information to answer this question.",
+      "latency_sec": 0.11,
+      "passed": true
+    },
+    {
+      "id": "Q31",
+      "category": "unanswerable_out_of_scope",
+      "question": "How much stock option equity is granted to non-teaching administrative staff?",
+      "expected_status": "insufficient_information",
+      "actual_status": "insufficient_information",
+      "has_conflict": false,
+      "citation_count": 0,
+      "citations": [],
+      "answer": "The available approved policy documents do not contain sufficient information to answer this question.",
+      "latency_sec": 0.19,
+      "passed": true
+    },
+    {
+      "id": "Q32",
+      "category": "unanswerable_out_of_scope",
+      "question": "What is the policy for company-sponsored electric vehicle home charging installation?",
+      "expected_status": "insufficient_information",
+      "actual_status": "insufficient_information",
+      "has_conflict": false,
+      "citation_count": 0,
+      "citations": [],
+      "answer": "The available approved policy documents do not contain sufficient information to answer this question.",
+      "latency_sec": 0.1,
+      "passed": true
+    },
+    {
+      "id": "Q33",
+      "category": "unanswerable_out_of_scope",
+      "question": "What is the employee subsidy for international personal holiday flight bookings?",
+      "expected_status": "insufficient_information",
+      "actual_status": "insufficient_information",
+      "has_conflict": false,
+      "citation_count": 0,
+      "citations": [],
+      "answer": "The available approved policy documents do not contain sufficient information to answer this question.",
+      "latency_sec": 0.16,
+      "passed": true
+    },
+    {
+      "id": "Q34",
+      "category": "unanswerable_out_of_scope",
+      "question": "Can an employee bring personal cryptocurrency hardware wallets into the office server room?",
+      "expected_status": "insufficient_information",
+      "actual_status": "insufficient_information",
+      "has_conflict": false,
+      "citation_count": 0,
+      "citations": [],
+      "answer": "The available approved policy documents do not contain sufficient information to answer this question.",
+      "latency_sec": 0.08,
+      "passed": true
+    }
+  ]
+}
