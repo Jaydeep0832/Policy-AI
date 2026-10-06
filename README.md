@@ -5,14 +5,20 @@
 [![Python](https://img.shields.io/badge/Python-3.11+-3776AB.svg?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.110+-009688.svg?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 [![React](https://img.shields.io/badge/React-19-61DAFB.svg?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![Vercel](https://img.shields.io/badge/Vercel-Live_App-black.svg?style=for-the-badge&logo=vercel&logoColor=white)](https://policy-ai.vercel.app)
+[![Render](https://img.shields.io/badge/Render-API_Live-46E3B7.svg?style=for-the-badge&logo=render&logoColor=black)](https://policy-ai-backend-6lu6.onrender.com/docs)
 [![LangGraph](https://img.shields.io/badge/LangGraph-StateGraph-FF6F00.svg?style=for-the-badge)](https://langchain-ai.github.io/langgraph/)
 [![LangSmith](https://img.shields.io/badge/LangSmith-Tracing-1C3C3C.svg?style=for-the-badge&logo=langchain&logoColor=white)](https://smith.langchain.com/)
-[![Cost](https://img.shields.io/badge/Retrieval_Cost-$0.00_Local_CPU-success.svg?style=for-the-badge)](https://github.com/Jaydeep0832/Policy-AI)
 
 **A deterministic, zero-hallucination AI decision engine for institutional policies.**  
 Combines dual vector-space firewalls, legal precedence hierarchies, local CPU hybrid retrieval, and multi-model failover cascades — with 100% verified source citations.
 
-[Live App](#-live-ui-walkthrough) • [How It Works](#-how-it-works-in-one-glance) • [Tech Stack](#-pipeline-tech-stack-at-a-glance) • [Failover Cascade](#-multi-model-failover-cascade) • [Benchmark](#-proven-evaluation-benchmarks)
+### 🌐 Live Deployments
+* 🚀 **Public Web Application**: **[https://policy-ai.vercel.app](https://policy-ai.vercel.app)**
+* 📖 **Interactive Swagger API Docs**: **[https://policy-ai-backend-6lu6.onrender.com/docs](https://policy-ai-backend-6lu6.onrender.com/docs)**
+* 🩺 **Backend Health Endpoint**: **[https://policy-ai-backend-6lu6.onrender.com/health](https://policy-ai-backend-6lu6.onrender.com/health)**
+
+[Live App](https://policy-ai.vercel.app) • [How It Works](#-how-it-works-in-one-glance) • [Tech Stack](#-pipeline-tech-stack-at-a-glance) • [Failover Cascade](#-multi-model-failover-cascade) • [Benchmark](#-proven-evaluation-benchmarks)
 
 </div>
 
@@ -180,15 +186,19 @@ Evaluated across a comprehensive **34-scenario curated test suite** spanning 5 r
 
 ## 🚀 Quick API Example
 
-Query the live system via standard REST:
+Query the live production system via standard REST:
 
 ```bash
-curl -X POST "http://127.0.0.1:8000/query" \
+# Public Live API
+curl -X POST "https://policy-ai-backend-6lu6.onrender.com/query" \
   -H "Content-Type: application/json" \
   -d '{
     "question": "What is the maximum earned leave an employee can accumulate?",
     "department": "General Administration"
   }'
+
+# Or Locally on Port 8000
+# curl -X POST "http://127.0.0.1:8000/query" -H "Content-Type: application/json" -d '{"question": "..."}'
 ```
 
 ```json
