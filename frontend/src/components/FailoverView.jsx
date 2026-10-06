@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { API_BASE } from '../apiConfig';
 
 export default function FailoverView() {
   const [telemetry, setTelemetry] = useState(null);
@@ -7,7 +8,7 @@ export default function FailoverView() {
 
   const fetchStatus = async () => {
     try {
-      const res = await fetch('/api/llm-status');
+      const res = await fetch(`${API_BASE}/api/llm-status`);
       if (res.ok) {
         const data = await res.json();
         setTelemetry(data);
@@ -25,7 +26,7 @@ export default function FailoverView() {
     setIsPinging(true);
     setPingResult('Pinging active cascade...');
     try {
-      const res = await fetch('/api/test-llm', { method: 'POST' });
+      const res = await fetch(`${API_BASE}/api/test-llm`, { method: 'POST' });
       if (res.ok) {
         const data = await res.json();
         setPingResult(`✓ Responded in ${data.ping_latency_ms}ms via ${data.active_model_used} (${data.provider})`);

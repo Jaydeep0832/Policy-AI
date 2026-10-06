@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import { API_BASE } from '../apiConfig';
 
 export default function PoliciesView() {
   const [policies, setPolicies] = useState([]);
   const [filter, setFilter] = useState('all');
 
   useEffect(() => {
-    fetch('/policies')
+    fetch(`${API_BASE}/policies`)
       .then((res) => res.json())
       .then((data) => setPolicies(data))
       .catch((err) => console.error('Failed to load policies:', err));

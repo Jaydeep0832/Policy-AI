@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import { API_BASE } from '../apiConfig';
 
 export default function ExplainerView() {
   const [exampleData, setExampleData] = useState(null);
 
   useEffect(() => {
-    fetch('/api/rag-example')
+    fetch(`${API_BASE}/api/rag-example`)
       .then((res) => res.json())
       .then((data) => setExampleData(data))
       .catch((err) => console.error('Failed to load RAG example:', err));

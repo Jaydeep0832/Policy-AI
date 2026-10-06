@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { API_BASE } from './apiConfig';
 import Sidebar from './components/Sidebar';
 import ChatView from './components/ChatView';
 import FailoverView from './components/FailoverView';
@@ -31,7 +32,7 @@ export default function App() {
     setIsLoading(true);
 
     try {
-      const res = await fetch('/query', {
+      const res = await fetch(`${API_BASE}/query`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ question: q, department: dept || null })
