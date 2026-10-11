@@ -48,22 +48,46 @@ When an employee asks: *"What is my maximum earned leave accumulation?"* or *"Ca
 PolicyAI orchestrates an end-to-end **LangGraph StateGraph** pipeline that filters, evaluates, and verifies before spending any LLM tokens:
 
 ```mermaid
-flowchart TD
-    UserQuery(["💬 Employee Query\n(e.g., 'Earned leave ceiling for executives?')"]) --> Ingestion["1. Query Ingestion & Pre-Processing"]
-    Ingestion --> ShadowProbe{"2. Shadow Index Probe\n(218 Draft & Expired Vectors)"}
-    
-    ShadowProbe -- "Matches Draft / Expired Rule" --> Refusal["⚡ Instant Governance Refusal\n(~15ms | Zero LLM Cost)"]
-    ShadowProbe -- "Clear (Valid Active Topic)" --> HybridSearch["3. Dual Hybrid Retrieval\nDense BGE-Small (384d) + Sparse BM25"]
-    
-    HybridSearch --> RRF["4. Reciprocal Rank Fusion (RRF k=60)\n+ Grouped Policy Diversity Cap (Max 2/Doc)"]
-    RRF --> CrossEncoder["5. FlashRank Cross-Encoder Reranking\nms-marco-TinyBERT Joint Attention (~70ms)"]
-    
-    CrossEncoder --> SufficiencyGate{"6. Calibrated Sufficiency Gate\nTop Score >= 0.03 ?"}
-    SufficiencyGate -- "No (Out-of-Scope Query)" --> Abstain["🛡️ Deterministic Abstention\n(Zero Hallucination | Zero LLM Cost)"]
-    
-    SufficiencyGate -- "Yes (Grounded Evidence)" --> MultiLLM["7. Multi-Model Synthesis Cascade\n(Groq LPU -> Cerebras -> Gemini Flash-Lite)"]
-    MultiLLM --> Verifier["8. Verbatim Citation Guardrail\nRegex-Normalized PDF Page String Check"]
-    Verifier --> FinalResponse(["✅ Verified Answer + Verbatim Quotes + Diagnostics"])
+flowchart LR
+    Q(["💬 User Query"]) --> P{{"🛡️ Shadow Probe<br/>Draft / Expired?"}}
+    P -- "Match" --> R1["⚡ Governance Refusal<br/>~15ms · $0 LLM"]
+
+    subgraph RET ["🔍 Retrieval · Local CPU · $0"]
+        direction TB
+        H["Hybrid Search<br/>BGE-Small + BM25"] --> F["RRF k=60<br/>Max 2 chunks/doc"] --> C["FlashRank<br/>Cross-Encoder"]
+    end
+
+    P -- "Clear" --> H
+    C --> G{{"🎯 Sufficiency Gate<br/>score ≥ 0.03 ?"}}
+    G -- "No" --> R2["🚫 Abstain<br/>Zero hallucination"]
+
+    subgraph GEN ["🤖 Synthesis · Failover Cascade"]
+        direction TB
+        L1["Groq"] -. "429" .-> L2["Cerebras"] -. "429" .-> L3["Gemini"]
+    end
+
+    G -- "Yes" --> L1
+    L1 --> V["📜 Citation Verifier<br/>Verbatim page check"]
+    L2 --> V
+    L3 --> V
+    V --> A(["✅ Verified Answer<br/>+ Citations"])
+
+    classDef input fill:#3b82f6,stroke:#1d4ed8,color:#fff,stroke-width:2px
+    classDef guard fill:#f59e0b,stroke:#b45309,color:#000,stroke-width:2px
+    classDef process fill:#8b5cf6,stroke:#5b21b6,color:#fff,stroke-width:2px
+    classDef llm fill:#06b6d4,stroke:#0e7490,color:#000,stroke-width:2px
+    classDef stop fill:#ef4444,stroke:#991b1b,color:#fff,stroke-width:2px
+    classDef success fill:#22c55e,stroke:#15803d,color:#000,stroke-width:2px
+
+    class Q input
+    class P,G guard
+    class H,F,C process
+    class L1,L2,L3 llm
+    class R1,R2 stop
+    class V,A success
+
+    style RET fill:#8b5cf620,stroke:#8b5cf6,stroke-dasharray: 5 5
+    style GEN fill:#06b6d420,stroke:#06b6d4,stroke-dasharray: 5 5
 ```
 
 ### The 5 Architectural Innovations
